@@ -9,24 +9,26 @@
             color: pink;
             background-color:black;
         }
-            #title{
-                color:coral;
-            }
-            .title2{
-                color: yellow;
+        #title{
+            color:coral;
+        }
+        .title2{
+            color: yellow;
                 
-            }
-            h2{
-                color:blanchedalmond;
-                background:yellowgreen;               
-            
+        }
+        h2{
+            color:blanchedalmond;
+            background:yellowgreen;               
+            /* ưu tiên màu của class và id hơn là thẻ */
 
-            }
+        }
     </style>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- dòng này dùng để gắn file CSS ngoài vào file HTML, giúp tách phần nội dung (HTML) và trình bày (CSS) riêng biệt.-->
+    <link rel="stylesheet" href="style.css"> <!-- external vs sau internal nên đc ưu tiên trc-->
 </head>
 <body>
-    <!-- inline style độ ưu tiến lớn nhất rồi đến css và đến trong head-->
+    <!-- inline style độ ưu tiến lớn nhất rồi đến (internal và đến external 2 cái này cái nào viết sau thì đc ưu tiên trc) -->
     <h1 style="color:blue; font-size: 100px; background-color: aqua;">inline style</h1>
     <p id="title">Internal style</p>
     <p class="title2">Black Pink</p>

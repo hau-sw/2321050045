@@ -1,26 +1,35 @@
 h1{
-    background-color:crimson
+    background-color:crimson;
 }
 h2{
-    background-color:lightblue
+    background-color:lightblue;
 }
 .box1{
     color:brown;
-    background-color:mediumblue
+    background-color:mediumblue;
 }
 .box2{
     color:yellow;
-    background-color:green
+    background-color:green;
     /* 1 giá trị (cách xung quanh = giá trị đó) */
     /* 2 giá trị: giá trị đầu tiên(trên , dưới)giá trị thứ 2(trái, phải) */
     /* 4 giá trị: trên ->phải->dưới->trái */
 
-    /* margin : 50px 10px 100px 30px; */
-    width: 50%;
+     margin : 50px 10px 100px 30px;
+    /* width: 50%; */
     /* auto can khoi ra giua */
-    margin: 50px auto;
+    /* margin: khoảng cách bên ngoài của phần tử (cách so với phần tử khác).
+    50px auto có nghĩa là:
+    Trên và dưới: cách 50px.
+    Trái và phải: auto → trình duyệt sẽ tự động tính toán để căn giữa phần tử theo chiều ngang. */
+    /* margin: 50px auto; */
+    /* padding: khoảng cách bên trong của phần tử (giữa viền border và nội dung).
 
-    padding: 100px;
+100px nghĩa là tất cả các cạnh (trên, phải, dưới, trái) đều có khoảng đệm 100px.
+
+ Giúp nội dung không bị dính sát vào viền, tạo khoảng trống bên trong. */
+
+    /* padding: 100px; */
     
 }
 .box3{
