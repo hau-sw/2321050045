@@ -1,0 +1,16 @@
+.cs{
+    display: flex;
+    gap: 8px;
+    margin: 18px 0;
+}
+.css{
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 13px;
+}
+.Center{
+    padding: 28px 32px;
+    overflow: auto;
+    background-color: rgb(49, 48, 48);
+}

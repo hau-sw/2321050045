@@ -1,5 +1,5 @@
 body {
-  mragin: 0;/* (tạo khoảng cách bên ngoài của phần tử ) margin: 0; nghĩa là loại bỏ hết khoảng cách ngoài mặc định của thẻ <body> (thường các trình duyệt sẽ tự thêm khoảng trắng nhỏ ở trên và hai bên).*/
+  margin: 0;/* (tạo khoảng cách bên ngoài của phần tử ) margin: 0; nghĩa là loại bỏ hết khoảng cách ngoài mặc định của thẻ <body> (thường các trình duyệt sẽ tự thêm khoảng trắng nhỏ ở trên và hai bên).*/
   font-family: Roboto, Arial, Tahoma; /* chỉ định phông chữ cho văn bản*/
 }
 nav {
@@ -84,7 +84,6 @@ space-evenly → mọi khoảng cách đều bằng nhau (kể cả ngoài cùng
   border-bottom: 2px solid #0f75bc;
   padding: 10px;
 }
-
 .xem-them {
   font-size: small;
   text-decoration: none;
@@ -179,9 +178,9 @@ space-evenly → mọi khoảng cách đều bằng nhau (kể cả ngoài cùng
   margin: 0 auto 20px;
 }
 .anh-doi-tac img {
+  width: 28vh;
   border: 0.1px solid rgba(128, 128, 128, 0.371);
   margin-right: 5px;
-  width: 15.5%;
 }
 .video-link {
   display: flex;
