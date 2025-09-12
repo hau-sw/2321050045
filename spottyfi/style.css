@@ -1,16 +1,244 @@
-.cs{
-    display: flex;
-    gap: 8px;
-    margin: 18px 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Tác dụng chính của box-sizing: border-box; là:
+
+Giúp dễ kiểm soát kích thước phần tử
+
+Khi bạn đặt width hoặc height, kích thước phần tử sẽ không bị “phình” ra do cộng thêm padding và border.
+
+Nhờ vậy, bố cục (layout) chính xác hơn, đặc biệt khi làm giao diện web phức tạp. */
 }
-.css{
-    padding: 8px 12px;
-    border-radius: 20px;
-    font-weight: 500;
-    font-size: 13px;
+body {
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* 100vh là chiều cao bằng 100% trình duyệt */
 }
-.Center{
-    padding: 28px 32px;
-    overflow: auto;
-    background-color: rgb(49, 48, 48);
+.container {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #000;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.sidebar h3 {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #b3b3b3;
+}
+.sidebar .menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  font-size: 14px;
+  color: #b3b3b3;
+  text-decoration: none;
+}
+.sidebar .menu img {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+}
+.sidebar .menu a:hover {
+  color: #fff;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  background: #181818;
+  padding: 20px;
+  overflow-y: auto;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchbar {
+  flex: 0.5;
+  margin: 0 20px;
+  background: #333;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: #fff;
+}
+.profile {
+  background: #333;
+  border-radius: 50%;
+  padding: 8px 12px;
+}
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+.tab {
+  background: #282828;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.tab.active {
+  background: #fff;
+  color: #000;
+}
+.cards {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  overflow-x: auto;
+}
+.card {
+  flex: 0 0 140px;
+  background: #282828;
+  padding: 10px;
+  border-radius: 8%;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+.section {
+  margin-bottom: 30px;
+}
+.section h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.scroll-list {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+.scroll-list .item {
+  flex: 0 0 160px;
+  background: #282828;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+.scroll-list img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+/* Now playing */
+.now-playing {
+  width: 300px;
+  background: #181818;
+  border-left: 1px solid #333;
+  padding: 20px;
+  overflow-y: auto;
+}
+.now-playing img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.now-playing h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.now-playing p {
+  margin: 5px 0 15px;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+.btn {
+  background: #333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.artist-info {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+/* Player bar */
+.player-bar {
+  height: 90px;
+  background: #181818;
+  border-top: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.player-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.player-left img {
+  width: 56px;
+  height: 56px;
+  border-radius: 6px;
+}
+.info {
+  font-size: 14px;
+}
+.info span {
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.player-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.controls {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.timeline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+.progress {
+  width: 400px;
+  height: 4px;
+  background: #333;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.progress .bar {
+  width: 5%;
+  height: 100%;
+  background: #1db954;
+}
+.player-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+  cursor: pointer;
 }
