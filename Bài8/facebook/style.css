@@ -1,0 +1,61 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(235, 235, 238);
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    margin: auto;
+    height: 80vh;
+    background: white;
+    width: 60vh;
+    
+}
+.logo{
+     margin-right: 30px;
+     display: flex;
+     justify-content: center;
+     font-size: 30px;
+     color: blue;
+     justify-content: center;
+}
+.create h1{
+    margin-left: 65px;
+}
+.create p{
+    margin-top: -20px;
+    margin-left: 150px;
+
+}
+.name input{
+    width: 40%;
+    height: 30px;
+    margin: 10px;
+}
+.form{
+    margin-left: 20px;
+}
+.danhsach{
+    margin: 10px;
+}
+.ngaythang select{
+    width: 30%;
+    height: 30px;
+    margin-right: 3px;
+}
+.password input{
+    width: 87%;
+    height: 30px;
+    margin: 10px;
+}
+.grnder1{
+    margin-left: 10px;
+}
+.grnder1 span{
+    border: 1px solid black;
+    padding: 5px;
+    height: 30px;
+    margin-right: 10px;
+}

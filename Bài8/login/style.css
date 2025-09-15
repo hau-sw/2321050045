@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(242, 245, 248);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+}
+.container{
+    width: 130vh;
+    height: 80vh;
+    background-color: white;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    padding: 20px;
+    display: flex;
+}
+.logo{
+    width: 50%;
+    height: 130%;
+   
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+h1{
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+.form{
+    margin-left: 90px;
+}
