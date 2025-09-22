@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: rgb(21, 21, 21);
+  color: white;
+  font-weight: bold;
+}
+/* hearder */
+.phandau {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  display: flex;
+  margin: 0 auto;
+  position: fixed;
+  /* phần này sẽ cuộn theo */
+}
+.container1 {
+  width: 100%;
+  margin: 0 auto;
+}
+.phanbentrai {
+  display: flex;
+}
+.phanbentrai img {
+  margin-top: 6px;
+  height: 78%;
+  margin-left: 70%;
+}
+.menu ul {
+  margin-top: 27px;
+  list-style: none;
+  display: flex;
+  margin-left: 15%;
+}
+.menu-list li {
+  margin: 0 1%;
+}
+.list a,
+.fa-caret-down {
+  text-decoration: none;
+  color: rgb(157, 156, 156);
+  font-weight: bold;
+}
+.list:first-child a {
+  color: white;
+}
+.list a:hover {
+  color: rgb(255, 128, 0);
+}
+.list:first-child:hover {
+  color: rgb(255, 128, 0);
+}
+
+.list {
+  white-space: nowrap;
+}
+.fa-caret-down:hover {
+  color: orange;
+}
+.phanbenphai {
+  color: white;
+  margin-left: 25%;
+  display: flex;
+}
+.phanbenphai .icon2:hover {
+  color: rgb(255, 128, 0);
+}
+.icon1 i {
+  margin-top: 30px;
+  font-size: 150%;
+  margin-right: 20px;
+}
+.icon1 a {
+  color: white;
+}
+.dn {
+  margin-top: 30px;
+}
+.dn a {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+}
+.dn a:first-child {
+  padding: 10px 20px;
+  background-color: rgb(255, 85, 0);
+  border-radius: 30px;
+}
+
+/* main */
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+.new {
+  display: flex;
+}
+img {
+  border-radius: 10px;
+}
+.anhbia img {
+  width: 100%;
+}
+.anhsau img {
+  margin-top: 20px;
+  width: 100%;
+}
+.new1 {
+  margin-top: 70px;
+  margin-bottom: 25px;
+}
+.anh {
+  margin-bottom: -12px;
+  width: 100%;
+}
+.phimmoi1 {
+  padding-right: 20px;
+}
+.anh1 {
+  margin-bottom: -13px;
+  width: 100%;
+  height: 85%;
+}
+.phimmoi2 {
+  padding-right: 20px;
+}
+.new2 {
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+.phimmoi3 a:hover {
+  filter: brightness(120%);
+  /* làm sáng ảnh */
+}
+
+/* footer */
+footer {
+  background: black;
+  width: 100%;
+  margin-top: 100px;
+  border-top: 0.6px solid gray;
+}
+.container2 {
+  width: 85%;
+  margin: 0 auto;
+}
+.phanket {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.phanket a:hover{
+  color: rgb(255, 128, 0);
+}
+
+.phanket1 img {
+  width: 200px;
+}
+.phanket1 img:first-child {
+  margin-top: -5px;
+}
+.lg img {
+  width: 100px;
+  margin-right: 20px;
+}
+.phanket2 div {
+  margin-top: 20px;
+}
+.phanket3 {
+  margin-left: -35px;
+}
+.phanket4 {
+  margin-left: 50px;
+}
+.phanket2 a {
+  color: gray;
+  text-decoration: none;
+  font-weight: normal;
+}
+.ico a:last-child {
+  color: white;
+}
+.ico a:hover{
+  color: rgb(255, 128, 0);
+}
+.ico a {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.ketthuc {
+  border-top: 0.6px solid gray;
+  display: flex;
+}
+.gt {
+  margin-top: 20px;
+  display: flex;
+}
+.ud img {
+  border-radius: 1px;
+}
+.ud img:first-child {
+  width: 130px;
+}
+.ud img:last-child {
+  width: 150px;
+}
+.gioithieu,
+.ungdung p {
+  color: gray;
+  font-weight: normal;
+}
+.gioithieu {
+  margin-right: 95px;
+}
