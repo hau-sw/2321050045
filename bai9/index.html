@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <script>
+        //để viết chú thích js
+        document.writeln("hello world" + "<br>");
+        // javascript + dùng để nối chuỗi
+        let hoTen="Pham Quang Hau";
+        document.writeln(hoTen+"<br>");
+
+        // Hằng
+        const pi = 3.14;
+
+        let soThuNhat=10;
+        let soThuHai=5;
+        let ketQua=0;
+        // so sanh == !=
+        // == !=ko qt kieu du lieu
+        // === !== so sanh ca kieu du lieu
+        document.writeln(soThuNhat!==soThuHai);
+        // + - * / % ++ --
+        ketQua = soThuNhat + soThuHai;
+        document.writeln(ketQua);
+
+        // sothunhat=sothunhat+-sothuhai
+        soThuNhat+=soThuHai;
+        document.writeln(soThuNhat);
+        soThuNhat-=soThuHai;
+        document.writeln(soThuNhat);
+
+        let thongTinSinhVien = {
+            hoTen: "Duong Tran Nhat Anh",
+            tuoi: 20,
+            gioiTinh:true,
+            lop: "Khoa hoc may tinh k68",
+            diachi: {
+                  thanhPho:"Vinh phuc",
+                  quanHuyen:"Phuc Yen",
+                  duong:"2 ba trung",
+                  soNha: 39
+            }
+        };
+        let namNay=2025;
+        document.writeln(thongTinSinhVien.hoTen+"<br>");
+        document.writeln("Xin chao "
+            +thongTinSinhVien.hoTen
+            +" lop "
+            +thongTinSinhVien.lop
+            +" so nha: "
+            +thongTinSinhVien.diachi.soNha
+            +" duong: "
+            +thongTinSinhVien.diachi.duong
+            +" huyen: "
+            +thongTinSinhVien.diachi.quanHuyen
+            +" thanh pho: "
+            +thongTinSinhVien.diachi.thanhPho
+            +" nam sinh: " +(namNay - thongTinSinhVien.tuoi+"<br>")
+
+        )
+
+        let sothuba="10.99";
+        sothuba = parseFloat(sothuba);
+        document.writeln(sothuba);
+
+
+    </script>
+</body>
+</html>
