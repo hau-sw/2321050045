@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        // project don hang
+      const donHang = {
+        maDonHang: "PH001",
+        khachHang: {
+          hoTen: "Pham Quang Hau",
+          sDT: "0967779930",
+          thanhVienThanThiet: true,
+        },
+        danhSachSanPham: {
+          sp1: {
+            maSanPham: "sp01",
+            tenSanPham: "Ca Phe",
+            soLuong1: 2,
+            giaTien1: 10000,
+          },
+          sp2: {
+            maSanPham: "sp02",
+            tenSanPham: "matCha",
+            soLuong2: 2,
+            giaTien2: 15000,
+          },
+          sp3: {
+            maSanPham: "sp03",
+            tenSanPham: "Tra sua",
+            soLuong3: 2,
+            giaTien3: 200000,
+          },
+        },
+        trangThaiThanhToan: false,
+        diaChiGiaoHang: "ngo 1 pho vien",
+      };
+      let tongGiaTri = 0;
+      tongGiaTri =
+        donHang.danhSachSanPham.sp1.giaTien1 *
+          donHang.danhSachSanPham.sp1.soLuong1 +
+        donHang.danhSachSanPham.sp2.giaTien2 *
+          donHang.danhSachSanPham.sp2.soLuong2 +
+        donHang.danhSachSanPham.sp3.giaTien3 *
+          donHang.danhSachSanPham.sp3.soLuong3;
+      document.writeln(tongGiaTri +"<br>");
+
+    //   string
+
+
+    let hoTen="Pham Quang Hau";
+    // lenght độ dài chuỗi;
+    document.writeln(hoTen.length+"<br>");
+    let myString="hello alice";
+    document.writeln(myString[0]+"<br>");
+    // phan tu lay ra
+    document.writeln(myString.slice(1,5)+"<br>");
+    // lấy trong khoảng từ 1-5
+    document.writeln(myString.replace("hello","hi")+"<br>");
+    // thay hello thanh hi
+
+    document.writeln(myString.toLocaleUpperCase()+"<br>");
+    //   kiem tra ki tu
+     document.writeln(myString.indexOf("o")+"<br>");
+     document.writeln(myString.includes("e")+"<br>");
+    //  kiem tra xem co ki tu day ko
+
+    // tách chuỗi thành mảng split
+
+     document.writeln(myString.split("")+"<br>");
+    //  do dai cua mang la tung ki tu cua tu,còn thêm cách thì đến chỗ nào cách thì 1 mảng , nếu cho kí tự vào thì chia mảng từ chỗ kí tự
+         document.writeln(myString.startsWith("h")+"<br>");
+    //  kiêm tra chữ bắt đầu 
+    
+    let pi=3.14159;
+    document.writeln(pi.toFixed(2)+"<br>");
+    // 2 so sau dau phay
+
+    document.writeln(isNaN(10)+"<br>");
+    // ko phải là số
+    // nếu là số thì fale còn chuỗi là true
+
+    let toDay= new Date();
+    document.writeln(toDay+"<br>");
+    // lấy ngày giờ hiện tại
+    document.writeln(toDay.getFullYear());
+    document.writeln(toDay.getMonth());
+    document.writeln(toDay.getDay());
+    document.writeln(toDay.getDate());
+    document.writeln(toDay.getHours());
+    document.writeln(toDay.getMinutes());
+    document.writeln(toDay.getTime());
+
+
+
+
+    </script>
+  </body>
+</html>
