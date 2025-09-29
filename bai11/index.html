@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 11</title>
+</head>
+<body>
+    <script>
+        //1.Mảng
+        let arr=[1,2,3,4,"a","b","c",2,3];
+        let ten= "ten";
+        let thongTin={
+            ten: ten
+        };
+        document.writeln(Array.isArray(thongTin));
+        // kiểm tra xem có phải là 1 mảng ko
+        
+        document.writeln(arr.length);
+        // kiểm tra độ dài của mảng
+        
+        document.writeln(arr[2]);
+        // xem vị trí giá trị của phần tử
+        
+        document.writeln(arr.lastIndexOf(3));
+        // kiểm tra vị trí của giá trị của phần tử nếu ko có trả về -1 còn có thì trả về vị trí của nó
+       
+        arr[3]=6;
+        // thay vị trí số 3 thành số "6"
+        document.writeln(arr);
+
+        let a,b,c,d;
+        a=[1,2,3];
+        b="Javascript";
+        c=[42,"js"];
+        d=a.concat(b,c);
+        // nối mảng
+
+        // d=d.join("/")
+        // Biến mảng về chuỗi
+
+
+        d.pop();
+        // xóa phần tử cuối cùng trong mảng
+
+        d.push("hau");
+        // thêm phần tử vào mảng
+
+        d.reverse();
+        // đảo ngược mảng
+
+        d.shift();
+        // xóa phần tử đầu tiên
+        document.writeln(d);
+
+
+        // 2.các câu lệnh điều khiển
+        let so=10;
+        if(so%2==0){
+            document.writeln(so+" la so chan");
+        }
+        else{
+            document.writeln(so+" la so le")
+        };
+        let now=new Date().getHours();
+        
+        // vi du ve ngay gio
+        if(now>=5&&now<10){
+            document.writeln("chao buoi sang");
+        }
+        else if(now>=10&&now<13){
+            document.writeln("chao buoi trua");
+        }
+        else if(now>=13&&now<17){
+            document.writeln("chao buoi chieu");
+        }
+        else if(now>=17&&now<22){
+            document.writeln("chao buoi toi");
+        }
+        else{
+            document.writeln("chao buoi khuya");
+        };
+        
+        // tinh diem trung binh cua mon;
+        let A=Number(prompt("Nhap vao diem a "));
+        let B=Number(prompt("Nhap vao diem b "));
+        let C=Number(prompt("Nhap vao diem c "));
+
+        let dtbm=A*0.6+B*0.3+C*0.1;
+        if(dtbm<4){
+             document.writeln("F");
+        }
+        else if(dtbm>=4&&dtbm<5){
+            document.writeln("D");
+
+        }
+        else if(dtbm>=5&&dtbm<7){
+            document.writeln("B");
+        }
+        else if(dtbm>=7&&dtbm<8){
+            document.writeln("A");
+        }
+        else {
+            document.writeln("A+");
+        };
+
+
+
+  
+    </script>
+</body>
+</html>
