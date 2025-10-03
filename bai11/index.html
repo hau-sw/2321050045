@@ -87,7 +87,7 @@
         let C=Number(prompt("Nhap vao diem c "));
 
         let dtbm=A*0.6+B*0.3+C*0.1;
-        if(dtbm<4){
+        if(dtbm>=0&&dtbm<4){
              document.writeln("F");
         }
         else if(dtbm>=4&&dtbm<5){
@@ -100,9 +100,12 @@
         else if(dtbm>=7&&dtbm<8){
             document.writeln("A");
         }
-        else {
+        else if(dtbm >=8&& dtbm<=10){
             document.writeln("A+");
-        };
+        }
+        else{
+            document.writeln("Ko hop le")
+        }
 
 
 
