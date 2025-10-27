@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./main.js"></script>
+    <h1>Tinh tong</h1>
+    <div>
+        <p>nhap vao so thu nhat</p>
+        <input type="number" id="num1">
+    </div>
+        <div>
+        <p>nhap vao so hai</p>
+        <input type="number" id="num2">
+    </div>
+    <div>
+        <button onclick="tinhtong()">tinh tong</button>
+    </div>
+    <div>
+        <p>ket qua</p>
+        <input type="number" id="result" class="ketqua">
+    </div>
+    <script>
+        function tinhtong(){
+            let so1 = document.getElementById("num1").value;
+            let so2 = document.getElementById("num2").value;
+            let canhbao = "";
+            if(!so1){
+                canhbao += "ban chua nhap so thu nhat\n";
+            }
+            if(!so2){
+                canhbao += "ban chua nhap so thu hai\n";
+            }
+            if(canhbao){
+                alert(canhbao);
+            }
+            let tong = parseFloat(so1) + parseFloat(so2);
+            document.getElementById("result").value = tong;
+        }
+
+        
+    </script>
+</body>
+</html>

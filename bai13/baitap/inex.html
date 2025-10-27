@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tinh diem chu</h1>
+    <h2>diem : A*0.6+B*0.3+C*0.1</h2>
+    <div>
+        <p>nhap vao diem A</p>
+        <input type="number" id="diemA">
+    </div>
+        <div>
+        <p>nhap vao diem B</p>
+        <input type="number" id="diemB">
+    </div>
+    <div>
+        <p>nhap vao diem C</p>
+        <input type="number" id="diemC">    
+    </div>
+    <div>
+        <button onclick="tinhdiemchu()">tinh diem chu</button>
+    </div>
+    <div>
+        <p>ket qua</p>
+        <input type="text" id="ketqua" class="ketqua">
+    </div>
+    <script>
+        function tinhdiemchu(){
+            let diemA = parseFloat(document.getElementById("diemA").value);
+            let diemB = parseFloat(document.getElementById("diemB").value);
+            let diemC = parseFloat(document.getElementById("diemC").value);
+            let canhbao ="";
+            if(isNaN(diemA)){
+                canhbao += "ban chua nhap diem A\n";
+            }
+            if(isNaN(diemB)){
+                canhbao += "ban chua nhap diem B\n";
+            }
+            if(isNaN(diemC)){
+                canhbao += "ban chua nhap diem C\n";
+            }
+            if(canhbao){
+                alert(canhbao);
+            }
+            let diemTong = diemA * 0.6 + diemB * 0.3 + diemC * 0.1;
+            let diemChu ="";
+            if(diemTong >= 9){
+                diemChu = "A";
+            } else if(diemTong >= 8){
+                diemChu = "B";
+            } else if(diemTong >= 6){
+                diemChu = "C";
+            } else if(diemTong >= 4){
+                diemChu = "D";
+            } else {
+                diemChu = "F";
+            }
+            document.getElementById("ketqua").value = diemChu;
+        }
+    </script>
+</body>
+</html>
