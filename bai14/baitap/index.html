@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Chỉ Số BMI </title>  
+    <style>
+        h1 {
+            text-align: center;
+            
+        }
+        .container {
+            background-color: lightgoldenrodyellow;
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border-radius:  20px ;
+            display: flex;
+        }
+        .kt button{
+            padding: 1px 50px;
+            margin-top: 10px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>Bai Lam</h1>
+    <div class="container">
+        <div class="BMI">
+            <p>Nhap vao chieu cao</p>
+            <input type="text" id="chieuCao" placeholder="Nhap chieu cao (m)"/>
+            <p>Nhap vao can nang</p>
+            <input type="text" id="canNang" placeholder="Nhap can nang (kg)"/>
+            
+            <div class="kt">
+                <button onclick="tinhBMI">Kiem Tra</button>
+            </div>
+            <div>
+                chi so BMI cua ban la: <input type="text" id="ketQua"/>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function tinhBMI() {
+            let chieuCao = parseFloat( document.getElementById("chieuCao").value);
+            let canNang = parseFloat( document.getElementById("canNang").value);
+            let bmi = canNang / (chieuCao * chieuCao);
+            bmi = bmi.toFixed(2);
+            let ketQua = "";
+            if (bmi < 18.5) {
+                ketQua = "Thieu can";
+            } else if (bmi >= 18.5 && bmi < 24.9) {
+                ketQua = "Binh thuong";
+            } else if (bmi >= 25 && bmi < 29.9) {
+                ketQua = "Thua can";
+            } else if (bmi >= 30&& bmi < 39.9) {
+                ketQua = "Beo phi";
+            }
+            document.getElementById("ketQua").value = bmi;
+        }
+    </script>
+</body>
+</html>

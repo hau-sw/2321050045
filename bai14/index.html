@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div><h1>Ví dụ về đổi chế độ</h1></div>
+      <div>
+        <img src="./images.png" alt="" width="100px" />
+      </div>
+      <div>
+        <h1>Chế độ sáng</h1>
+      </div>
+      <div>
+        <button onclick="doiCheDo()">Thay đổi chế độ</button>
+      </div>
+    </div>
+    <script>
+        let cheDo = true;
+      function doiCheDo() {
+        
+        if (cheDo == true) {
+          document.getElementsByTagName(
+            "body"
+          )[0].style = `background-color: black ; color: white; text-align: center;`;
+        document.getElementsByTagName(`h1`)[0].style = `color: yellow;`;
+        document.getElementsByTagName(`h1`)[1].style = `color: red;`;
+        document.getElementsByTagName(`h1`)[1].innerHTML = `che do toi`;
+        document.getElementsByTagName(`img`)[0].src = `mt.jpg`;
+        cheDo = false;
+    }
+     else {
+          document.getElementsByTagName(
+            "body"
+          )[0].style = `background-color: white ; color: black; text-align: center;`;
+          document.getElementsByTagName(`h1`)[0].style = `color: black;`;
+          document.getElementsByTagName(`h1`)[1].style = `color: blue;`;
+          document.getElementsByTagName(`h1`)[1].innerHTML = `che do sang`;
+          document.getElementsByTagName(`img`)[0].src = `images.png`;
+          cheDo = true;
+      }
+    }
+    </script>
+  </body>
+</html>

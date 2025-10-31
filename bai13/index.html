@@ -17,14 +17,17 @@
         <input type="number" id="num2">
     </div>
     <div>
-        <button onclick="tinhtong()">tinh tong</button>
+        <button onclick="tinhTong()">tinh tong</button>
+        <button onclick="tinhHieu()">tinh Hieu</button>
+        <button onclick="tinhTich()">tinh Tich</button>
+        <button onclick="tinhThuong()">tinh Thuong</button>
     </div>
     <div>
         <p>ket qua</p>
         <input type="number" id="result" class="ketqua">
     </div>
     <script>
-        function tinhtong(){
+        function tinhTong(){
             let so1 = document.getElementById("num1").value;
             let so2 = document.getElementById("num2").value;
             let canhbao = "";
@@ -40,8 +43,59 @@
             let tong = parseFloat(so1) + parseFloat(so2);
             document.getElementById("result").value = tong;
         }
-
-        
+        function tinhHieu(){
+            let so1 = document.getElementById("num1").value;
+            let so2 = document.getElementById("num2").value;
+            let canhbao = "";
+            if(!so1){
+                canhbao += "ban chua nhap so thu nhat\n";
+            }
+            if(!so2){
+                canhbao += "ban chua nhap so thu hai\n";
+            }
+            if(canhbao){
+                alert(canhbao);
+            }
+            let hieu = parseFloat(so1) - parseFloat(so2);
+            document.getElementById("result").value = hieu;
+        }
+        function tinhTich(){
+            let so1 = document.getElementById("num1").value;
+            let so2 = document.getElementById("num2").value;
+            let canhbao = "";
+            if(!so1){
+                canhbao += "ban chua nhap so thu nhat\n";
+            }
+            if(!so2){
+                canhbao += "ban chua nhap so thu hai\n";
+            }
+            if(canhbao){
+                alert(canhbao);
+            }
+            let tich = parseFloat(so1) * parseFloat(so2);
+            document.getElementById("result").value = tich;
+        }
+        function tinhThuong(){
+            let so1 = document.getElementById("num1").value;
+            let so2 = document.getElementById("num2").value;
+            let canhbao = "";
+            if(!so1){
+                canhbao += "ban chua nhap so thu nhat\n";
+            }
+            if(!so2){
+                canhbao += "ban chua nhap so thu hai\n";
+            }
+            if(canhbao){
+                alert(canhbao);
+            }
+            if(parseFloat(so2) === 0){
+                alert("khong the chia cho 0");
+                return;
+            }
+            
+            document.getElementById("result").value = ketQua;
+        }
+    
     </script>
 </body>
 </html>
