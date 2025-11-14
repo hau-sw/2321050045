@@ -51,7 +51,7 @@
     <script>
         function tinhBMI() {
             let chieuCao = parseFloat( document.getElementById("chieuCao").value);
-            let canNang = parseFloat( document.getElementById("canNang").value);
+            let canNang = parseFloat( document.getElementById("canNang").value);//.value Lấy giá trị mà người dùng nhập vào trong ô input.
             let bmi = canNang / (chieuCao * chieuCao);
             bmi = bmi.toFixed(2);
             let ketQua = "";

@@ -9,6 +9,10 @@ body {
   font-weight: bold;
 }
 /* hearder */
+header {
+  position: fixed;
+  z-index: 100;
+}
 .phandau {
   width: 100%;
   height: 10vh;
@@ -219,4 +223,109 @@ footer {
 }
 .gioithieu {
   margin-right: 95px;
+}
+
+/* thay doi  */
+.anhbia{
+position: relative;
+}
+
+.anhbia img{
+ display: block;
+
+}
+
+.thongtinphim{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0px 0px;
+  
+}
+
+.thongtinphim ul{
+  margin-bottom: 30px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  
+}
+.play{
+  margin-left: 20px;
+  display: flex;
+  padding: 0px 90px;
+  background-color: rgb(255, 60, 0);
+  border-radius: 30px;
+  width: 50px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;  
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: white;
+}
+.play img{
+  width: 90px;
+  height: 90px; 
+  text-align: center ;
+  justify-content: center;
+  margin-top: 5px;
+  margin-left: -20px;
+}
+.xem{
+  margin-left: -20px;
+  margin-right: 5px;
+}
+.play-new{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: flex;
+}
+.tenPhim{
+  margin-left: 20px;
+}
+.xemngay{
+  display: flex;
+  gap: 50px;
+
+}
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.like,.share{
+  background: transparent;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  border: solid gray;
+}
+.like i{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.share i{
+    margin-top: 20px;
+    margin-left: 18px;
+}
+.like:hover,.share:hover{
+  filter: brightness(200%);
+}
+.play:hover{
+  filter: brightness(150%);
+}
+.trailer{
+  margin-left: 300px;
+  margin-top: -80px;
+}
+
+.icon3:hover{
+  filter: brightness(120%);
 }
