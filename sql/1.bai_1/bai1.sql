@@ -1,25 +1,54 @@
 CREATE DATABASE IF NOT EXISTS ql_webphim;
 USE ql_webphim;
-/*  1.thể loại
-	-id:INT primary key
-    -ten_the_loai: VARCHAR(50)
-	2. phim
-    - id : INT primary key
-    - dao_dien: VARCHAR2
-    - dien_vien: VARCHAR
-    
-    3.người dùng
-    - id :Int 
-    - tai_khoan :int
-    - tenNguoiDung varchar(50)
+/*  create DATABASE IF not EXISTS quan_ly_web_phim;
+
+1. thể loại
+    - id int primary key
+    - ten_the_loai varchar(50)
+2. người dùng
+    - id int
+    - ten_dang_nhap varchar(50)
     - matKhau varchar(50)
     - ho_ten varchar(50)
     - email varchar(50)
     - sdt varchar(10)
-    - quyen_id int
+    - vai_tro_id int 
     - ngay_sinh datetime
-    4.quốc gia
-    5.tập phim*/  
+3. vai_tro
+    - id int
+    - ten_vai_tro varchar(20)
+4. phim
+    - id int primary key
+    - ten_phim varchar
+    - dao_dien_id int
+    - nam_phat_hanh int
+    - poster varchar
+    - quoc_gia_id int
+    - so_tap int
+    - trailer varchar
+    - mo_ta text
+5. phim_dien_vien
+    - id int
+    - phim_id int
+    - dien_vien_id int
+6. phim_the_loai
+    - id int
+    - phim_id int
+    - the_loai_id int
+7. quốc gia
+    -id int
+    -ten_quoc_gia varchar
+5. Tập phim
+    - id int
+    - so_tap int
+    - tieu_de varchar
+    - phim_id int
+    - thoiLuong float 
+    - trailer varchar
+
+- Hoàn thiện CSDL để quản lý web phim
+- Viết các câu lệnh để chạy nhiều lần k bị lỗi
+- Viết câu lệnh để mỗi 1 bảng tạo 30 dữ liệu*/  
 CREATE TABLE the_loai(
     id INT
   );
